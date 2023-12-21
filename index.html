@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Hub Website</title>
+    <!-- link of the tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- link of the daisyUI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header class="text-center mt-10 ">
+        <h1 class="text-3xl font-bold">AI Universe Hub</h1>
+        <button onclick="getItems()" class="btn btn-success font-semibold text-lg text-white px-5 my-10">Shot By Date</button>
+        <div id="spinnerLoading" class=" mt-16 hidden">
+            <span class="loading loading-spinner loading-lg"></span>
+        </div>
+    </header>
+    <main>
+        <section class="px-5 md:px-10 lg:px-20">
+            <!-- this is the card show area -->
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                
+            </div>
+            <div id="all-show-button" class="text-center py-20 hidden">
+                <button onclick="allShowButton()" class="btn btn-warning px-20 text-xl ">See Mores</button>
+            </div>
+        </section>
+    </main>
+    
+
+    <script src="universe.js"></script>
+</body>
+</html>
